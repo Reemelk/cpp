@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+
+#include "sickkoala.h"
+#include "koalanurse.h"
+
+int main()
+{
+  SickKoala myKoala("Julien");
+  KoalaNurse Nurse0;
+  Nurse0.timeCheck();
+  Nurse0.timeCheck();
+  return 0;
+}

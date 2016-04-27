@@ -3,20 +3,17 @@
 
 #include <iostream>
 
-#include "koaladoctor.h"
-#include "koalanurse.h"
-
 class SickKoala
 {
-  std::string m_patient;
+  std::string m_name;
 
  public:
   SickKoala(std::string name);
   ~SickKoala();
+  std::string getName();
   void poke();
   bool takeDrug(std::string response);
   void overDrive(std::string idk);
-  std::string getName();
 };
 
 #endif

@@ -2,9 +2,7 @@
 #define __KOALANURSE_H_
 
 #include <iostream>
-
 #include "sickkoala.h"
-#include "koaladoctor.h"
 
 class KoalaNurse
 {

@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 
 #include "sickkoala.h"
 #include "koalanurse.h"
@@ -7,9 +9,13 @@
 
 int main()
 {
-  //SickKoala myKoala("Julien");
+  std::srand(std::time(0));
+
+  SickKoala myKoala("Julien");
   //KoalaNurse Nurse0;
-  //KoalaDoctor myDoctor("Bilala");
-  //myDoctor.diagnose(myKoala);
+  //Nurse0.readReport("julien.report");
+  KoalaDoctor nb1("Matthew");
+  nb1.diagnose(&myKoala);
+  
   return 0;
 }

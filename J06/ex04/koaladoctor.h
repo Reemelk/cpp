@@ -2,18 +2,19 @@
 #define __KOALADOCTOR_H_
 
 #include <iostream>
-//class SickKoala;
-//#include "sickkoala.h"
-#include "koalanurse.h"
+#include "sickkoala.h"
 
 class KoalaDoctor
 {
-  std::string m_doctorName;
+  std::string m_name;
+  bool m_status;
 
- public :
+ public:
   KoalaDoctor(std::string name);
   ~KoalaDoctor();
+  std::string getName();
   void diagnose(SickKoala *patient);
+  void timeCheck();
 };
 
 #endif

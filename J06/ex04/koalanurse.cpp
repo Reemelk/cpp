@@ -4,7 +4,6 @@
 
 #include "koalanurse.h"
 #include "sickkoala.h"
-#include "koaladoctor.h"
 
 KoalaNurse::KoalaNurse()
 {
